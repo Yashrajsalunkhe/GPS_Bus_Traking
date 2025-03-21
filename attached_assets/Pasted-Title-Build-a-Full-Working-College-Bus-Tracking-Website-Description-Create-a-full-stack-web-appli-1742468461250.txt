@@ -1,0 +1,84 @@
+Title: Build a Full Working College Bus Tracking Website
+
+Description:
+Create a full-stack web application for a college bus tracking system. The website should allow students, parents, and administrators to track buses in real-time using GPS data.
+Tech Stack:
+
+    Frontend: React.js (Vite) + Tailwind CSS for styling
+    Backend: Node.js + Express.js
+    Database: MySQL (or Firebase as an alternative)
+    Real-Time Tracking: Google Maps API (or Leaflet.js)
+    Authentication: JWT-based login for students, parents, and admins
+
+Project Features:
+1. Home Page
+
+    A clean landing page with Login/Signup options for students and parents
+    Brief information about the system with an interactive UI
+
+2. User Authentication
+
+    Students & parents register/login using email/password
+    Admin panel to manage users & buses
+    Implement JWT authentication
+
+3. Real-Time Bus Tracking
+
+    Display bus locations on an interactive map
+    Users can search for a bus by route or number
+    Google Maps API or Leaflet.js for tracking
+
+4. Bus Details & ETA
+
+    Click on a bus to view live location, driver details, and estimated arrival time (ETA)
+    Dynamic updates based on GPS input
+
+5. Admin Dashboard
+
+    Add/update bus routes and stops
+    Assign drivers to buses
+    Monitor real-time bus movement
+
+6. Notifications & Alerts
+
+    Late bus alerts for students & parents
+    Emergency contact button for reporting issues
+
+7. Responsive & Mobile Friendly
+
+    Ensure the website is fully responsive for mobile use
+    Use React.js with Tailwind CSS for a modern look
+
+Project Structure
+
+/college-bus-tracker
+│── /frontend  (React.js - Vite)
+│    ├── /src
+│    │    ├── /components (Navbar, Map, BusList, etc.)
+│    │    ├── /pages (Home, BusDetails, AdminDashboard)
+│    │    ├── /utils (API calls, helpers)
+│    │    ├── App.jsx
+│    │    ├── main.jsx
+│    ├── package.json
+│
+│── /backend  (Node.js + Express)
+│    ├── /routes (busRoutes.js, userRoutes.js)
+│    ├── /controllers (busController.js, userController.js)
+│    ├── /models (Bus.js, User.js)
+│    ├── /config (db.js)
+│    ├── server.js
+│
+│── /database (MySQL / Firebase)
+│── package.json
+│── README.md
+
+Development Steps:
+
+1️⃣ Set up the project: Create React frontend & Node.js backend
+2️⃣ Develop authentication: Implement JWT login for users
+3️⃣ Integrate maps: Use Google Maps API for real-time tracking
+4️⃣ Build admin dashboard: Manage buses & users
+5️⃣ Test & deploy: Optimize for mobile, deploy to Replit / Vercel / Railway
+Final Instructions for Replit AI
+
+"Generate a full working website for a College Bus Tracking System using React.js, Node.js, and MySQL/Firebase. Include user authentication, real-time bus tracking with Google Maps API, an admin dashboard, and notifications for bus status updates. The site should be mobile-friendly and scalable."
